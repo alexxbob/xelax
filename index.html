@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <script>
+    $(document).ready(function(){
          $("#div").hide();             
 $('#Input').on('keydown',  function(e) { 
        var inc = 20;      
@@ -20,7 +21,7 @@ $('#Input').on('keydown',  function(e) {
           $("#div").fadeOut("Slow");
              $('#div').text(randomText);  
           } }); 
- 
+    })
     </script>
   </head>
   <body>
