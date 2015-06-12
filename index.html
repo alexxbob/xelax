@@ -8,10 +8,28 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script>
+         $("#div").hide();             
+$('#Input').on('keydown',  function(e) { 
+       var inc = 20;      
+    if ( e.keyCode === 32 )
+          {      
+             $("#div").fadeIn("Slow");              
+     
+              randomText = "Warning: Bullshit detected";
+          $("#div").fadeOut("Slow");
+             $('#div').text(randomText);  
+          } }); 
+ 
+    </script>
   </head>
   <body>
     <section class="page-header">
-      <iframe width="100%" height="300" src="//jsfiddle.net/6bSX6/1379/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+    Comment:<br />
+<textarea id='Input' type='text' rows="5" cols="5" style="width:400px" ></textarea>
+<br><br>
+    <div id="div" style="background-color:#eee; color:red; border:1px dashed #333; font-size:40px; font-weight:bold; display:inline; width:10px">       
+    </div>
       <h1 class="project-name">Xelax</h1>
       <h2 class="project-tagline">Hm... test</h2>
       <a href="https://github.com/alexxbob/xelax" class="btn">View on GitHub</a>
